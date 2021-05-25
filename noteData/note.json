@@ -1,0 +1,34 @@
+{
+  "notes": [
+    {
+      "title": "React",
+      "content": "React is fun to learn",
+      "id": 2
+    },
+    {
+      "title": "PHP",
+      "content": "Backend language to be used in our capstone",
+      "id": 3
+    },
+    {
+      "title": "JavaScript",
+      "content": "A scripting language for html",
+      "id": 4
+    },
+    {
+      "title": "Laravel",
+      "content": "A framework for PHP",
+      "id": 5
+    },
+    {
+      "title": "HTML",
+      "content": "Layout of the webpage",
+      "id": 6
+    },
+    {
+      "title": "CSS",
+      "content": "Used to design the html",
+      "id": 7
+    }
+  ]
+}

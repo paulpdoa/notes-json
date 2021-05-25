@@ -1,38 +1,188 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+*{
+  padding:0%;
+  margin:0%;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Quicksand', sans-serif;
+  background:whitesmoke;
+}
+.header-container {
+  display:flex;
+  justify-content:space-between;
+}
+.adding{
+  margin-right:10px;
+  align-self:center;
+  cursor:pointer;
+  transition:0.4s;
+}
+.adding a{
+  text-decoration:none;
+  color:green;
+}
+.adding:hover{
+  transform: rotate(360deg);
+}
+.notes-main-container{
+  display:flex;
+  justify-content:center;
+  margin-top:10vh;
+}
+.notes-form-container {
+  background:white;
+  border:1px solid black;
+  border-radius:10px;
+  width:100%;
+  height:100%;
+}
+.notes-content{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+}
+.notes-content a{
+  text-decoration:none;
+}
+.note-box {
+  background:rgba(235, 219, 219, 0.26);
+  color:rgb(82, 73, 73);
+  margin:5px;
+  padding:20px;
+  width:300px;
+  height:120px;
+  border-radius:5px;
+  border:1px solid rgb(230, 221, 221);
+  cursor:pointer;
+  transition:0.4s;
+}
+.note-box:hover {
+  box-shadow:10px 10px 10px black;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.search-container{
+  margin-top:10px;
+  display:flex;
+  justify-content:space-evenly;
+}
+.search-box input {
+  font-family: 'Quicksand', sans-serif;
+  padding:5px;
+  border:1px solid rgb(214, 200, 200);
+  border-radius:15px;
+  width:300px;
+  outline:none;
+}
+.btnSearch button {
+  font-family: 'Quicksand', sans-serif;
+  padding:5px;
+  background:rgb(55, 133, 223);
+  color:white;
+  border:1px solid rgb(214, 200, 200);
+  font-weight:bold;
+  border-radius:5px;
+  cursor:pointer;
+  transition:0.4s;
+}
+.btnSearch button:hover {
+  background:white;
+  color:black;
+}
+.footer-container {
+  text-align:center;
+  bottom:0;
+  color:rgba(0, 0, 0, 0.185);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* create */
+.create-form {
+  display:flex;
+  justify-content: space-between;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.backBtn{
+  margin-right:10px;
+  align-self:center;
+  cursor:pointer;
+  transition:0.4s;
 }
-
-.App-link {
-  color: #61dafb;
+.backBtn:hover{
+  transform: rotate(360deg);
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.backBtn a {
+  color:rgb(0, 174, 255);
+  text-decoration:none;
+  outline:none;
+}
+.add-note-container {
+  display:flex;
+  justify-content:center;
+  border:1px solid black;
+  border-radius:6px;
+  height:100%;
+  width:100%;
+}
+.form-input input {
+  font-family: 'Quicksand', sans-serif;
+  outline:none;
+  padding:4px;
+  border:1px solid rgb(202, 179, 179);
+  border-radius:4px;
+}
+.form-input textarea {
+  border:1px solid rgb(202, 179, 179);
+  border-radius:4px;
+  height:100px;
+  font-family: 'Quicksand', sans-serif;
+  outline:none;
+}
+.submitBtn{
+  display:flex;
+  justify-content:center;
+  align-self: center;
+}
+.submitBtn button {
+  font-family: 'Quicksand', sans-serif;
+  padding:4px;
+  border:1px solid rgb(235, 219, 219);
+  color:white;
+  font-weight:bold;
+  border-radius:4px;
+  cursor:pointer;
+  transition:0.4s;
+  background:rgb(55, 101, 228);
+}
+.submitBtn button:hover {
+  background:white;
+  color:black;
+}
+.form-box {
+  padding:50px;
+}
+.detail-title-container {
+  display:flex;
+  justify-content:space-between;
+}
+.detailBtn {
+  margin-right:10px;
+  align-self:center;
+  cursor:pointer;
+  transition:0.4s;
+  color:rgb(201, 10, 10);
+}
+.detailBtn:hover{
+  transform: rotate(360deg);
+}
+.noteDetail-container {
+  height:150%;
+  border-radius:5px;
+}
+.note-content {
+  margin:10px;
+  border:1px solid rgb(218, 208, 208);
+  display:flex;
+  justify-content:center;
+}
+.note-detail {
+  padding:30px;
 }
